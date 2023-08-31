@@ -59,10 +59,8 @@ export default class extends Controller {
 
 5. add an action trigger to the form. trigger will be [`turbo:submit-start`](https://turbo.hotwired.dev/reference/events)
 
-```html
+```erb
 <div class="p-3">
-  <%= simple_form_for @recipe, data: { action:
-  'turbo:submit-start->spinner#show' } do |f| %> <%= f.input :title %> <%=
-  f.submit %> <% end %>
+  <%= simple_form_for @recipe, data: { action: 'turbo:submit-start->spinner#show' } do |f| %> <%= f.input :title %> <%= f.submit %> <% end %>
 </div>
 ```
