@@ -57,7 +57,7 @@ export default class extends Controller {
 }
 ```
 
-5. add an action trigger to the form. trigger will be (`turbo:submit-start`)[https://turbo.hotwired.dev/reference/events]
+5. add an action trigger to the form. trigger will be [`turbo:submit-start`](https://turbo.hotwired.dev/reference/events)
 
 ```html
 <div class="p-3">
