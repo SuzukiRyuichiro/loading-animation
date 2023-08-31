@@ -61,6 +61,9 @@ export default class extends Controller {
 
 ```erb
 <div class="p-3">
-  <%= simple_form_for @recipe, data: { action: 'turbo:submit-start->spinner#show' } do |f| %> <%= f.input :title %> <%= f.submit %> <% end %>
+  <%= simple_form_for @recipe, data: { action: 'turbo:submit-start->spinner#show' } do |f| %>
+    <%= f.input :title %>
+    <%= f.submit %>
+  <% end %>
 </div>
 ```
