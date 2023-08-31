@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body>
+  <body data-controller="spinner">
+    <!-- Spinner Wrapper -->
+    <div id="spinner" class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute invisible" data-spinner-target="spinner">
+      <!-- Spinner from font awesome -->
+      <i class="fa-solid fa-spinner fa-spin fa-2xl"></i>
+    </div>
     <%= yield %>
   </body>
 </html>
