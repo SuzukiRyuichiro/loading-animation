@@ -4,10 +4,11 @@ class RecipesController < ApplicationController
   end
 
   def create
-    # Fake API call
+    # Fake a time consuming API call
     sleep(5)
 
     @recipe = Recipe.new(recipe_params)
+
     if @recipe.save
       redirect_to recipe_path(@recipe)
     else
